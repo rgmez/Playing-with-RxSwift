@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zJ1-Br-9HR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Search Bar View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Playing_with_RxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SearchBarViewController" customModule="Playing_with_RxSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EAu-UL-Sjo" id="pSf-wo-wu6">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -62,14 +62,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="SON-lc-tNw">
-                    <connections>
-                        <outlet property="delegate" destination="BYZ-38-t0r" id="p53-lR-u0a"/>
-                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="OR7-BU-4q2"/>
-                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="GEQ-xq-0d0"/>
-                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="NGb-7L-crl"/>
-                    </connections>
-                </searchDisplayController>
                 <searchDisplayController id="dy0-cK-bH7">
                     <connections>
                         <outlet property="delegate" destination="BYZ-38-t0r" id="mgX-so-Aig"/>
@@ -80,7 +72,53 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="389.60000000000002" y="-161.46926536731635"/>
+            <point key="canvasLocation" x="974" y="-98"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="kCe-CH-wjy">
+            <objects>
+                <viewController id="zJ1-Br-9HR" customClass="MainViewController" customModule="Playing_with_RxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LxG-r5-chx"/>
+                        <viewControllerLayoutGuide type="bottom" id="cGC-bS-g8J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f1V-sd-PKj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUl-kA-IOz">
+                                <rect key="frame" x="137" y="213" width="101" height="30"/>
+                                <color key="backgroundColor" red="0.22352941179999999" green="0.53725490200000003" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="OER-AB-PGQ"/>
+                                </constraints>
+                                <state key="normal" title="SearchBar">
+                                    <color key="titleColor" red="0.91780990360000003" green="0.91850668189999995" blue="0.91791784759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="iDE-io-Dql"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RXSwift Example" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTq-AX-M6Z">
+                                <rect key="frame" x="16" y="28" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="FTq-AX-M6Z" secondAttribute="trailing" id="Bbu-pq-9wu"/>
+                            <constraint firstItem="AUl-kA-IOz" firstAttribute="centerX" secondItem="f1V-sd-PKj" secondAttribute="centerX" id="QzY-X0-w7d"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="FTq-AX-M6Z" secondAttribute="leading" id="SxT-HJ-xVe"/>
+                            <constraint firstItem="AUl-kA-IOz" firstAttribute="top" secondItem="LxG-r5-chx" secondAttribute="bottom" constant="193" id="ixN-cr-pyw"/>
+                            <constraint firstItem="FTq-AX-M6Z" firstAttribute="top" secondItem="LxG-r5-chx" secondAttribute="bottom" constant="8" id="oUO-5N-ajf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAQ-lW-kvS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16.800000000000001" y="-99.400299850074973"/>
         </scene>
     </scenes>
 </document>

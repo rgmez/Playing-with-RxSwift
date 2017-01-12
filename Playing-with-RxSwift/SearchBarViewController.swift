@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SearchBarViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
@@ -25,6 +25,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         tableView.dataSource = self
+        
+        shownProvinces = allSpainProvinces
+        tableView.reloadData()
         
         searchBar
             .rx.text
