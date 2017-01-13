@@ -32,12 +32,9 @@ class SearchBarViewController: UIViewController, UITableViewDelegate, UITableVie
         searchBar
             .rx.text
             .throttle(0.5, scheduler: MainScheduler.instance) // Wait 0.5 for changes.
-            .filter {
-                ($0?.characters.count)! > 0
-            }
             .subscribe(onNext: { (text) in
                 
-                self.shownProvinces = self.allSpainProvinces.filter { $0.hasPrefix(text!) }
+                self.shownProvinces = text == "" ? self.allSpainProvinces : self.allSpainProvinces.filter { $0.hasPrefix(text!) }
                 
                 self.tableView.reloadData()
                 
