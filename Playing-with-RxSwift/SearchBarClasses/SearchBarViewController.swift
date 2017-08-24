@@ -61,7 +61,4 @@ class SearchBarViewController: UIViewController, UITableViewDelegate, UITableVie
         
         return cell
     }
-
-
 }
-
