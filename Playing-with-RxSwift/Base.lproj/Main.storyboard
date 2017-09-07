@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EAu-UL-Sjo" id="pSf-wo-wu6">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -126,6 +126,38 @@
             </objects>
             <point key="canvasLocation" x="1884" y="313.49325337331339"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="baK-x1-GVN">
+            <objects>
+                <viewController id="kL8-d2-D2F" customClass="MapViewController" customModule="Playing_with_RxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7eR-fa-wwR"/>
+                        <viewControllerLayoutGuide type="bottom" id="V4I-TG-iI6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q6b-wh-h3u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="afR-wR-Nmu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="afR-wR-Nmu" firstAttribute="centerX" secondItem="q6b-wh-h3u" secondAttribute="centerX" id="1zs-XZ-F9p"/>
+                            <constraint firstItem="afR-wR-Nmu" firstAttribute="width" secondItem="q6b-wh-h3u" secondAttribute="width" id="DZ8-7W-SAp"/>
+                            <constraint firstItem="afR-wR-Nmu" firstAttribute="height" secondItem="q6b-wh-h3u" secondAttribute="height" id="ar6-UL-aVC"/>
+                            <constraint firstItem="afR-wR-Nmu" firstAttribute="centerY" secondItem="q6b-wh-h3u" secondAttribute="centerY" id="rg6-w2-8wo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="afR-wR-Nmu" id="eFf-RG-QeT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mBM-di-hHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1894" y="1061"/>
+        </scene>
         <!--Playing with RxSwift-->
         <scene sceneID="kCe-CH-wjy">
             <objects>
@@ -139,7 +171,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUl-kA-IOz">
-                                <rect key="frame" x="137" y="257" width="101" height="30"/>
+                                <rect key="frame" x="137" y="258" width="101" height="30"/>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.53725490200000003" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="101" id="OER-AB-PGQ"/>
@@ -152,7 +184,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CA7-wN-518">
-                                <rect key="frame" x="137" y="362" width="101" height="30"/>
+                                <rect key="frame" x="137" y="318" width="101" height="30"/>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.53725490200000003" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="101" id="dJv-rI-UCc"/>
@@ -164,13 +196,28 @@
                                     <segue destination="mdF-di-Ijh" kind="show" id="IXs-6i-jIH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoh-Xt-fRz">
+                                <rect key="frame" x="137" y="378" width="101" height="30"/>
+                                <color key="backgroundColor" red="0.22352941179999999" green="0.53725490200000003" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="w5J-at-RTE"/>
+                                </constraints>
+                                <state key="normal" title="MapView">
+                                    <color key="titleColor" red="0.91780990360000003" green="0.91850668189999995" blue="0.91791784759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kL8-d2-D2F" kind="show" id="vXU-EO-xQS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CA7-wN-518" firstAttribute="top" secondItem="AUl-kA-IOz" secondAttribute="bottom" constant="75" id="HIZ-oD-QUM"/>
+                            <constraint firstItem="eoh-Xt-fRz" firstAttribute="top" secondItem="CA7-wN-518" secondAttribute="bottom" constant="30" id="DHV-VR-XLJ"/>
                             <constraint firstItem="AUl-kA-IOz" firstAttribute="centerX" secondItem="f1V-sd-PKj" secondAttribute="centerX" id="QzY-X0-w7d"/>
                             <constraint firstItem="CA7-wN-518" firstAttribute="centerX" secondItem="f1V-sd-PKj" secondAttribute="centerX" id="Rra-yJ-KOo"/>
-                            <constraint firstItem="AUl-kA-IOz" firstAttribute="top" secondItem="LxG-r5-chx" secondAttribute="bottom" constant="193" id="ixN-cr-pyw"/>
+                            <constraint firstItem="eoh-Xt-fRz" firstAttribute="centerX" secondItem="f1V-sd-PKj" secondAttribute="centerX" id="iue-4f-jNu"/>
+                            <constraint firstItem="CA7-wN-518" firstAttribute="top" secondItem="AUl-kA-IOz" secondAttribute="bottom" constant="30" id="jVP-PB-DXe"/>
+                            <constraint firstItem="CA7-wN-518" firstAttribute="centerY" secondItem="f1V-sd-PKj" secondAttribute="centerY" id="nKF-0H-HgB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playing with RxSwift" id="0H0-D7-b9v"/>

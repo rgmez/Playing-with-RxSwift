@@ -11,9 +11,9 @@
 		7222A26B1E2123F200EE2E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7222A2691E2123F200EE2E0F /* Main.storyboard */; };
 		7222A26D1E2123F200EE2E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7222A26C1E2123F200EE2E0F /* Assets.xcassets */; };
 		7222A2701E2123F200EE2E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7222A26E1E2123F200EE2E0F /* LaunchScreen.storyboard */; };
+		7226D8161F615DA0004F4956 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 7226D8151F615DA0004F4956 /* data.json */; };
 		722E59F41E27774400A01E85 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722E59F21E27774400A01E85 /* MainViewController.swift */; };
-		723393361F4EED69000A9E26 /* MKMapView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723393341F4EED69000A9E26 /* MKMapView+Rx.swift */; };
-		723393371F4EED69000A9E26 /* RxMKMapViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723393351F4EED69000A9E26 /* RxMKMapViewDelegateProxy.swift */; };
+		723393391F4EF148000A9E26 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723393381F4EF148000A9E26 /* MapViewController.swift */; };
 		728B9B341E2CFF0E00F64013 /* RxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728B9B331E2CFF0E00F64013 /* RxTableViewController.swift */; };
 		728B9B371E2CFF2800F64013 /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728B9B361E2CFF2800F64013 /* SearchBarViewController.swift */; };
 		FC956F8A7C082D71EE9DCFB9 /* Pods_Playing_with_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4813BAFA209CE369E80F416 /* Pods_Playing_with_RxSwift.framework */; };
@@ -28,9 +28,9 @@
 		7222A26C1E2123F200EE2E0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7222A26F1E2123F200EE2E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7222A2711E2123F200EE2E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7226D8151F615DA0004F4956 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		722E59F21E27774400A01E85 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		723393341F4EED69000A9E26 /* MKMapView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKMapView+Rx.swift"; sourceTree = "<group>"; };
-		723393351F4EED69000A9E26 /* RxMKMapViewDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxMKMapViewDelegateProxy.swift; sourceTree = "<group>"; };
+		723393381F4EF148000A9E26 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		728B9B331E2CFF0E00F64013 /* RxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxTableViewController.swift; sourceTree = "<group>"; };
 		728B9B361E2CFF2800F64013 /* SearchBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
 		C4813BAFA209CE369E80F416 /* Pods_Playing_with_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playing_with_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,18 +85,18 @@
 		723393321F4EED69000A9E26 /* MapViewClasses */ = {
 			isa = PBXGroup;
 			children = (
-				723393331F4EED69000A9E26 /* RxMKMapView */,
+				723393491F4F0064000A9E26 /* Model */,
+				723393381F4EF148000A9E26 /* MapViewController.swift */,
 			);
 			path = MapViewClasses;
 			sourceTree = "<group>";
 		};
-		723393331F4EED69000A9E26 /* RxMKMapView */ = {
+		723393491F4F0064000A9E26 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				723393341F4EED69000A9E26 /* MKMapView+Rx.swift */,
-				723393351F4EED69000A9E26 /* RxMKMapViewDelegateProxy.swift */,
+				7226D8151F615DA0004F4956 /* data.json */,
 			);
-			path = RxMKMapView;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		728B9B321E2CFF0E00F64013 /* TableViewClasses */ = {
@@ -198,6 +198,7 @@
 				7222A2701E2123F200EE2E0F /* LaunchScreen.storyboard in Resources */,
 				7222A26D1E2123F200EE2E0F /* Assets.xcassets in Resources */,
 				7222A26B1E2123F200EE2E0F /* Main.storyboard in Resources */,
+				7226D8161F615DA0004F4956 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +260,8 @@
 				722E59F41E27774400A01E85 /* MainViewController.swift in Sources */,
 				728B9B371E2CFF2800F64013 /* SearchBarViewController.swift in Sources */,
 				7222A2661E2123F200EE2E0F /* AppDelegate.swift in Sources */,
-				723393371F4EED69000A9E26 /* RxMKMapViewDelegateProxy.swift in Sources */,
 				728B9B341E2CFF0E00F64013 /* RxTableViewController.swift in Sources */,
-				723393361F4EED69000A9E26 /* MKMapView+Rx.swift in Sources */,
+				723393391F4EF148000A9E26 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

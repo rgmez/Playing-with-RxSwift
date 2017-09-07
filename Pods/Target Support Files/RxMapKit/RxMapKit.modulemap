@@ -1,0 +1,6 @@
+framework module RxMapKit {
+  umbrella header "RxMapKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
