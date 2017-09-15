@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -141,17 +142,50 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="afR-wR-Nmu">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVk-TQ-j81">
+                                <rect key="frame" x="321" y="617" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.45098039509999999" green="0.68235296010000002" blue="0.078431375319999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wVk-TQ-j81" secondAttribute="height" multiplier="1:1" id="TOM-aq-k25"/>
+                                    <constraint firstAttribute="width" constant="30" id="r60-fa-mxr"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsz-Qg-cyW">
+                                <rect key="frame" x="283" y="617" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.45098039509999999" green="0.68235296010000002" blue="0.078431375319999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="bnh-3F-99I"/>
+                                    <constraint firstAttribute="width" secondItem="nsz-Qg-cyW" secondAttribute="height" multiplier="1:1" id="gMM-sJ-2Um"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CK1-7K-CIp">
+                                <rect key="frame" x="245" y="617" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.45098039509999999" green="0.68235296010000002" blue="0.078431375319999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CK1-7K-CIp" secondAttribute="height" multiplier="1:1" id="mB6-5m-dj8"/>
+                                    <constraint firstAttribute="width" constant="30" id="qzp-K0-mFY"/>
+                                </constraints>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wVk-TQ-j81" firstAttribute="top" secondItem="afR-wR-Nmu" secondAttribute="bottom" constant="-50" id="066-Bo-hc4"/>
                             <constraint firstItem="afR-wR-Nmu" firstAttribute="centerX" secondItem="q6b-wh-h3u" secondAttribute="centerX" id="1zs-XZ-F9p"/>
+                            <constraint firstItem="wVk-TQ-j81" firstAttribute="leading" secondItem="afR-wR-Nmu" secondAttribute="trailing" constant="-54" id="7nD-G7-dis"/>
                             <constraint firstItem="afR-wR-Nmu" firstAttribute="width" secondItem="q6b-wh-h3u" secondAttribute="width" id="DZ8-7W-SAp"/>
+                            <constraint firstItem="wVk-TQ-j81" firstAttribute="leading" secondItem="nsz-Qg-cyW" secondAttribute="trailing" constant="8" id="Vfm-Cu-SzE"/>
                             <constraint firstItem="afR-wR-Nmu" firstAttribute="height" secondItem="q6b-wh-h3u" secondAttribute="height" id="ar6-UL-aVC"/>
+                            <constraint firstItem="nsz-Qg-cyW" firstAttribute="top" secondItem="afR-wR-Nmu" secondAttribute="bottom" constant="-50" id="gBz-3L-o9A"/>
+                            <constraint firstItem="nsz-Qg-cyW" firstAttribute="leading" secondItem="CK1-7K-CIp" secondAttribute="trailing" constant="8" id="hDb-Ww-g8a"/>
+                            <constraint firstItem="CK1-7K-CIp" firstAttribute="top" secondItem="afR-wR-Nmu" secondAttribute="bottom" constant="-50" id="raz-Cx-vpA"/>
                             <constraint firstItem="afR-wR-Nmu" firstAttribute="centerY" secondItem="q6b-wh-h3u" secondAttribute="centerY" id="rg6-w2-8wo"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="favouriteButton" destination="nsz-Qg-cyW" id="jhj-8C-VHa"/>
                         <outlet property="mapView" destination="afR-wR-Nmu" id="eFf-RG-QeT"/>
+                        <outlet property="nearButton" destination="CK1-7K-CIp" id="3uy-Ai-xUk"/>
+                        <outlet property="routeButton" destination="wVk-TQ-j81" id="FuV-0K-hE5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBM-di-hHR" userLabel="First Responder" sceneMemberID="firstResponder"/>

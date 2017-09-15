@@ -14,6 +14,9 @@
 		7226D8161F615DA0004F4956 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 7226D8151F615DA0004F4956 /* data.json */; };
 		722E59F41E27774400A01E85 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722E59F21E27774400A01E85 /* MainViewController.swift */; };
 		723393391F4EF148000A9E26 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723393381F4EF148000A9E26 /* MapViewController.swift */; };
+		724BED921F6A9B670043B3B1 /* NavigationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724BED911F6A9B670043B3B1 /* NavigationServices.swift */; };
+		725B4C2D1F66A33600CB12A9 /* CalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725B4C2C1F66A33600CB12A9 /* CalloutView.swift */; };
+		725B4C2F1F66A39000CB12A9 /* CalloutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725B4C2E1F66A39000CB12A9 /* CalloutView.xib */; };
 		728B9B341E2CFF0E00F64013 /* RxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728B9B331E2CFF0E00F64013 /* RxTableViewController.swift */; };
 		728B9B371E2CFF2800F64013 /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728B9B361E2CFF2800F64013 /* SearchBarViewController.swift */; };
 		FC956F8A7C082D71EE9DCFB9 /* Pods_Playing_with_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4813BAFA209CE369E80F416 /* Pods_Playing_with_RxSwift.framework */; };
@@ -31,6 +34,9 @@
 		7226D8151F615DA0004F4956 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		722E59F21E27774400A01E85 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		723393381F4EF148000A9E26 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		724BED911F6A9B670043B3B1 /* NavigationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationServices.swift; sourceTree = "<group>"; };
+		725B4C2C1F66A33600CB12A9 /* CalloutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalloutView.swift; sourceTree = "<group>"; };
+		725B4C2E1F66A39000CB12A9 /* CalloutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalloutView.xib; sourceTree = "<group>"; };
 		728B9B331E2CFF0E00F64013 /* RxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxTableViewController.swift; sourceTree = "<group>"; };
 		728B9B361E2CFF2800F64013 /* SearchBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
 		C4813BAFA209CE369E80F416 /* Pods_Playing_with_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playing_with_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +93,9 @@
 			children = (
 				723393491F4F0064000A9E26 /* Model */,
 				723393381F4EF148000A9E26 /* MapViewController.swift */,
+				725B4C2C1F66A33600CB12A9 /* CalloutView.swift */,
+				725B4C2E1F66A39000CB12A9 /* CalloutView.xib */,
+				724BED911F6A9B670043B3B1 /* NavigationServices.swift */,
 			);
 			path = MapViewClasses;
 			sourceTree = "<group>";
@@ -162,12 +171,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Roberto Gómez";
 				TargetAttributes = {
 					7222A2611E2123F200EE2E0F = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = N2EU5K7QAN;
+						DevelopmentTeam = MUUV5K5WTY;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -199,6 +209,7 @@
 				7222A26D1E2123F200EE2E0F /* Assets.xcassets in Resources */,
 				7222A26B1E2123F200EE2E0F /* Main.storyboard in Resources */,
 				7226D8161F615DA0004F4956 /* data.json in Resources */,
+				725B4C2F1F66A39000CB12A9 /* CalloutView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +270,11 @@
 			files = (
 				722E59F41E27774400A01E85 /* MainViewController.swift in Sources */,
 				728B9B371E2CFF2800F64013 /* SearchBarViewController.swift in Sources */,
+				724BED921F6A9B670043B3B1 /* NavigationServices.swift in Sources */,
 				7222A2661E2123F200EE2E0F /* AppDelegate.swift in Sources */,
 				728B9B341E2CFF0E00F64013 /* RxTableViewController.swift in Sources */,
 				723393391F4EF148000A9E26 /* MapViewController.swift in Sources */,
+				725B4C2D1F66A33600CB12A9 /* CalloutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +309,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -304,7 +319,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -345,7 +364,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -353,7 +374,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -383,12 +408,13 @@
 			baseConfigurationReference = 0D9486C73F5595DF2F1F3634 /* Pods-Playing-with-RxSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = N2EU5K7QAN;
+				DEVELOPMENT_TEAM = MUUV5K5WTY;
 				INFOPLIST_FILE = "Playing-with-RxSwift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.robertogomez.Playing-with-RxSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -397,12 +423,13 @@
 			baseConfigurationReference = 3D2BB64C3637A40C5AF11494 /* Pods-Playing-with-RxSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = N2EU5K7QAN;
+				DEVELOPMENT_TEAM = MUUV5K5WTY;
 				INFOPLIST_FILE = "Playing-with-RxSwift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.robertogomez.Playing-with-RxSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
