@@ -14,9 +14,16 @@
 		7226D8161F615DA0004F4956 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 7226D8151F615DA0004F4956 /* data.json */; };
 		722E59F41E27774400A01E85 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722E59F21E27774400A01E85 /* MainViewController.swift */; };
 		723393391F4EF148000A9E26 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723393381F4EF148000A9E26 /* MapViewController.swift */; };
+		723F17351F6BC39C003483FE /* QuadTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723F17321F6BC39C003483FE /* QuadTree.swift */; };
+		723F17361F6BC39C003483FE /* Cluster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723F17331F6BC39C003483FE /* Cluster.swift */; };
+		723F17371F6BC39C003483FE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723F17341F6BC39C003483FE /* Extensions.swift */; };
+		723F17391F6BC86F003483FE /* ClusterAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723F17381F6BC86F003483FE /* ClusterAnnotation.swift */; };
+		723F173B1F6BD83A003483FE /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723F173A1F6BD83A003483FE /* Annotation.swift */; };
+		723F173D1F6BECCF003483FE /* BorderedClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723F173C1F6BECCF003483FE /* BorderedClusterAnnotationView.swift */; };
 		724BED921F6A9B670043B3B1 /* NavigationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724BED911F6A9B670043B3B1 /* NavigationServices.swift */; };
 		725B4C2D1F66A33600CB12A9 /* CalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725B4C2C1F66A33600CB12A9 /* CalloutView.swift */; };
 		725B4C2F1F66A39000CB12A9 /* CalloutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725B4C2E1F66A39000CB12A9 /* CalloutView.xib */; };
+		7270FEC61F6BBBB200FC1E78 /* DGSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7270FEC51F6BBBB200FC1E78 /* DGSegmentedControl.swift */; };
 		728B9B341E2CFF0E00F64013 /* RxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728B9B331E2CFF0E00F64013 /* RxTableViewController.swift */; };
 		728B9B371E2CFF2800F64013 /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728B9B361E2CFF2800F64013 /* SearchBarViewController.swift */; };
 		FC956F8A7C082D71EE9DCFB9 /* Pods_Playing_with_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4813BAFA209CE369E80F416 /* Pods_Playing_with_RxSwift.framework */; };
@@ -34,9 +41,16 @@
 		7226D8151F615DA0004F4956 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		722E59F21E27774400A01E85 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		723393381F4EF148000A9E26 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		723F17321F6BC39C003483FE /* QuadTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadTree.swift; sourceTree = "<group>"; };
+		723F17331F6BC39C003483FE /* Cluster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cluster.swift; sourceTree = "<group>"; };
+		723F17341F6BC39C003483FE /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		723F17381F6BC86F003483FE /* ClusterAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusterAnnotation.swift; sourceTree = "<group>"; };
+		723F173A1F6BD83A003483FE /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		723F173C1F6BECCF003483FE /* BorderedClusterAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedClusterAnnotationView.swift; sourceTree = "<group>"; };
 		724BED911F6A9B670043B3B1 /* NavigationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationServices.swift; sourceTree = "<group>"; };
 		725B4C2C1F66A33600CB12A9 /* CalloutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalloutView.swift; sourceTree = "<group>"; };
 		725B4C2E1F66A39000CB12A9 /* CalloutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalloutView.xib; sourceTree = "<group>"; };
+		7270FEC51F6BBBB200FC1E78 /* DGSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGSegmentedControl.swift; sourceTree = "<group>"; };
 		728B9B331E2CFF0E00F64013 /* RxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxTableViewController.swift; sourceTree = "<group>"; };
 		728B9B361E2CFF2800F64013 /* SearchBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
 		C4813BAFA209CE369E80F416 /* Pods_Playing_with_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playing_with_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +105,8 @@
 		723393321F4EED69000A9E26 /* MapViewClasses */ = {
 			isa = PBXGroup;
 			children = (
+				7270FEC31F6BBBB200FC1E78 /* Clustering */,
+				7270FEC41F6BBBB200FC1E78 /* DGSegmentedControl */,
 				723393491F4F0064000A9E26 /* Model */,
 				723393381F4EF148000A9E26 /* MapViewController.swift */,
 				725B4C2C1F66A33600CB12A9 /* CalloutView.swift */,
@@ -106,6 +122,27 @@
 				7226D8151F615DA0004F4956 /* data.json */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7270FEC31F6BBBB200FC1E78 /* Clustering */ = {
+			isa = PBXGroup;
+			children = (
+				723F173A1F6BD83A003483FE /* Annotation.swift */,
+				723F17381F6BC86F003483FE /* ClusterAnnotation.swift */,
+				723F17331F6BC39C003483FE /* Cluster.swift */,
+				723F17341F6BC39C003483FE /* Extensions.swift */,
+				723F17321F6BC39C003483FE /* QuadTree.swift */,
+				723F173C1F6BECCF003483FE /* BorderedClusterAnnotationView.swift */,
+			);
+			path = Clustering;
+			sourceTree = "<group>";
+		};
+		7270FEC41F6BBBB200FC1E78 /* DGSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				7270FEC51F6BBBB200FC1E78 /* DGSegmentedControl.swift */,
+			);
+			path = DGSegmentedControl;
 			sourceTree = "<group>";
 		};
 		728B9B321E2CFF0E00F64013 /* TableViewClasses */ = {
@@ -268,12 +305,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				723F17351F6BC39C003483FE /* QuadTree.swift in Sources */,
+				723F173D1F6BECCF003483FE /* BorderedClusterAnnotationView.swift in Sources */,
 				722E59F41E27774400A01E85 /* MainViewController.swift in Sources */,
 				728B9B371E2CFF2800F64013 /* SearchBarViewController.swift in Sources */,
 				724BED921F6A9B670043B3B1 /* NavigationServices.swift in Sources */,
+				723F173B1F6BD83A003483FE /* Annotation.swift in Sources */,
+				723F17361F6BC39C003483FE /* Cluster.swift in Sources */,
+				7270FEC61F6BBBB200FC1E78 /* DGSegmentedControl.swift in Sources */,
 				7222A2661E2123F200EE2E0F /* AppDelegate.swift in Sources */,
 				728B9B341E2CFF0E00F64013 /* RxTableViewController.swift in Sources */,
 				723393391F4EF148000A9E26 /* MapViewController.swift in Sources */,
+				723F17371F6BC39C003483FE /* Extensions.swift in Sources */,
+				723F17391F6BC86F003483FE /* ClusterAnnotation.swift in Sources */,
 				725B4C2D1F66A33600CB12A9 /* CalloutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
