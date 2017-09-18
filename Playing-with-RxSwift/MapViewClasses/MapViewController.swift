@@ -156,16 +156,13 @@ class MapViewController: UIViewController, CalloutViewDelegate {
     
     func addAnnotations() {
         
-        if let file = Bundle.main.url(forResource: "data", withExtension: "json"),
-            let data = try? Data(contentsOf: file),
-            let jsonArray = try? JSONSerialization.jsonObject(with: data, options: []) as! [[String: AnyObject]]  {
-            
-            clusterManager.add(jsonArray.flatMap(Annotation.init))
+        MapViewViewModel().retrieveStadiums().flatMap {
+            clusterManager.add($0.value.flatMap(Annotation.init))
         }
     }
     
     //MARK: CalloutDelegate
-    func addFavouriteAnnotation(_ data: [String : AnyObject]) {
+    func addFavouriteAnnotation(_ stadium: Stadium) {
         
     }
     

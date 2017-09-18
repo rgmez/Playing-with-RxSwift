@@ -13,7 +13,7 @@ import MapKit
 protocol CalloutViewDelegate {
     
     func routeFromUserLocation(_ location: CLLocationCoordinate2D)
-    func addFavouriteAnnotation(_ data: [String: AnyObject])
+    func addFavouriteAnnotation(_ stadium: Stadium)
 }
 
 class CalloutView: UIView {
@@ -25,10 +25,11 @@ class CalloutView: UIView {
     
     let disposeBag = DisposeBag()
     
-    func setupWith(_ data:[String: AnyObject], delegate: CalloutViewDelegate?) {
+    func setupWith(_ stadium: Stadium?, delegate: CalloutViewDelegate?) {
     
-        guard let team = data["team"] as? String,
-            let address = data["address"] as? String else {
+        guard let data = stadium,
+            let team = data.team,
+            let address = data.address else {
             return
         }
         

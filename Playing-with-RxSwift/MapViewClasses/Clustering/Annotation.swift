@@ -52,11 +52,13 @@ class AnnotationView: MKAnnotationView {
                 
                 (annotation as? Annotation).flatMap{ annotation in
                     self.calloutView.flatMap{
-                        $0.setupWith(annotation.data, delegate: delegate)
+                        $0.setupWith(annotation.stadium, delegate: delegate)
                         
                         $0.favButton.rx.tap
                             .subscribe(onNext: {
-                                self.delegate.flatMap{ $0.addFavouriteAnnotation(annotation.data) }
+                                annotation.stadium.flatMap{ stadium in
+                                    self.delegate.flatMap{ $0.addFavouriteAnnotation(stadium) }
+                                }
                             }).addDisposableTo($0.disposeBag)
                         
                         $0.routeButton.rx.tap
@@ -108,22 +110,22 @@ open class Annotation: NSObject, MKAnnotation {
     open var title: String?
     open var subtitle: String?
     open var type: ClusterAnnotationType?
-    open var data = [String: AnyObject]()
+    open var stadium: Stadium?
     
     override init(){
         super.init()
     }
     
-    init?(dictionary: [String: AnyObject]) {
+    init?(stadium: Stadium) {
         
-        guard let longitude = dictionary["lng"] as? Double,
-            let latitude = dictionary["lat"] as? Double,
-            let team = dictionary["team"] as? String,
-            let address = dictionary["address"] as? String else {
+        guard let longitude = stadium.lng,
+            let latitude = stadium.lat,
+            let team = stadium.team,
+            let address = stadium.address else {
                 return nil
         }
         
-        self.data = dictionary
+        self.stadium = stadium
         
         self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         self.title = team
