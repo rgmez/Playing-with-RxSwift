@@ -19,6 +19,8 @@ class RxTableViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Stadium List"
+        
         items = TableViewViewModel().retrieveStadiums()
         
         //Populate tableview with elements of items array, and set cell properties

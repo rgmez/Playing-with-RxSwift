@@ -42,7 +42,7 @@ class AnnotationView: MKAnnotationView {
         if selected {
             self.calloutView?.removeFromSuperview()
             
-            if let newCustomCalloutView = (UINib(nibName: "CalloutView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? CalloutView) {
+            if let newCustomCalloutView = UINib(nibName: "CalloutView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? CalloutView {
                 
                 newCustomCalloutView.frame.size = CGSize(width: UIScreen.main.bounds.width - kCalloutSpacing * 2, height: (UIScreen.main.bounds.width - kCalloutSpacing * 2) * (kCalloutHeight / kCalloutWidth))
                 newCustomCalloutView.frame.origin.x -= newCustomCalloutView.frame.width / 2.0 - (self.frame.width / 2.0)

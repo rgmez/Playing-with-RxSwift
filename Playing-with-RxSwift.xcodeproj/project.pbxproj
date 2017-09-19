@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D0CF4F21F7014F000F97B0B /* MapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0CF4F11F7014F000F97B0B /* MapTableViewController.swift */; };
 		6D2CDE871F6FADC0007AF17C /* Stadium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CDE861F6FADC0007AF17C /* Stadium.swift */; };
 		6D2CDE891F6FBF36007AF17C /* TableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CDE881F6FBF36007AF17C /* TableViewViewModel.swift */; };
 		6D2CDE8C1F6FE657007AF17C /* MapViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CDE8B1F6FE657007AF17C /* MapViewViewModel.swift */; };
+		6DD1D8871F713389004E2568 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1D8801F713388004E2568 /* CAPSPageMenu.swift */; };
+		6DD1D8901F7164AB004E2568 /* MenuItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1D88F1F7164AB004E2568 /* MenuItemView.xib */; };
+		6DD1D8921F716916004E2568 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1D8911F716916004E2568 /* MenuItemView.swift */; };
+		6DE979271F711E8400E20817 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE979261F711E8400E20817 /* extensions.swift */; };
 		7222A2661E2123F200EE2E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222A2651E2123F200EE2E0F /* AppDelegate.swift */; };
 		7222A26B1E2123F200EE2E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7222A2691E2123F200EE2E0F /* Main.storyboard */; };
 		7222A26D1E2123F200EE2E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7222A26C1E2123F200EE2E0F /* Assets.xcassets */; };
@@ -26,7 +31,6 @@
 		724BED921F6A9B670043B3B1 /* NavigationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724BED911F6A9B670043B3B1 /* NavigationServices.swift */; };
 		725B4C2D1F66A33600CB12A9 /* CalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725B4C2C1F66A33600CB12A9 /* CalloutView.swift */; };
 		725B4C2F1F66A39000CB12A9 /* CalloutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725B4C2E1F66A39000CB12A9 /* CalloutView.xib */; };
-		7270FEC61F6BBBB200FC1E78 /* DGSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7270FEC51F6BBBB200FC1E78 /* DGSegmentedControl.swift */; };
 		728B9B341E2CFF0E00F64013 /* RxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728B9B331E2CFF0E00F64013 /* RxTableViewController.swift */; };
 		728B9B371E2CFF2800F64013 /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728B9B361E2CFF2800F64013 /* SearchBarViewController.swift */; };
 		FC956F8A7C082D71EE9DCFB9 /* Pods_Playing_with_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4813BAFA209CE369E80F416 /* Pods_Playing_with_RxSwift.framework */; };
@@ -35,9 +39,14 @@
 /* Begin PBXFileReference section */
 		0D9486C73F5595DF2F1F3634 /* Pods-Playing-with-RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playing-with-RxSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Playing-with-RxSwift/Pods-Playing-with-RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		3D2BB64C3637A40C5AF11494 /* Pods-Playing-with-RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playing-with-RxSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Playing-with-RxSwift/Pods-Playing-with-RxSwift.release.xcconfig"; sourceTree = "<group>"; };
+		6D0CF4F11F7014F000F97B0B /* MapTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewController.swift; sourceTree = "<group>"; };
 		6D2CDE861F6FADC0007AF17C /* Stadium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stadium.swift; sourceTree = "<group>"; };
 		6D2CDE881F6FBF36007AF17C /* TableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewModel.swift; sourceTree = "<group>"; };
 		6D2CDE8B1F6FE657007AF17C /* MapViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewModel.swift; sourceTree = "<group>"; };
+		6DD1D8801F713388004E2568 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		6DD1D88F1F7164AB004E2568 /* MenuItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuItemView.xib; sourceTree = "<group>"; };
+		6DD1D8911F716916004E2568 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		6DE979261F711E8400E20817 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		7222A2621E2123F200EE2E0F /* Playing-with-RxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Playing-with-RxSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7222A2651E2123F200EE2E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7222A26A1E2123F200EE2E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,7 +65,6 @@
 		724BED911F6A9B670043B3B1 /* NavigationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationServices.swift; sourceTree = "<group>"; };
 		725B4C2C1F66A33600CB12A9 /* CalloutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalloutView.swift; sourceTree = "<group>"; };
 		725B4C2E1F66A39000CB12A9 /* CalloutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalloutView.xib; sourceTree = "<group>"; };
-		7270FEC51F6BBBB200FC1E78 /* DGSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGSegmentedControl.swift; sourceTree = "<group>"; };
 		728B9B331E2CFF0E00F64013 /* RxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxTableViewController.swift; sourceTree = "<group>"; };
 		728B9B361E2CFF2800F64013 /* SearchBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
 		C4813BAFA209CE369E80F416 /* Pods_Playing_with_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playing_with_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +82,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D0CF4EA1F7014BC00F97B0B /* MapTableViewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				6DD1D8801F713388004E2568 /* CAPSPageMenu.swift */,
+				6D0CF4F11F7014F000F97B0B /* MapTableViewController.swift */,
+				6DD1D8911F716916004E2568 /* MenuItemView.swift */,
+				6DD1D88F1F7164AB004E2568 /* MenuItemView.xib */,
+			);
+			path = MapTableViewClasses;
+			sourceTree = "<group>";
+		};
 		7222A2591E2123F200EE2E0F = {
 			isa = PBXGroup;
 			children = (
@@ -96,10 +115,12 @@
 			isa = PBXGroup;
 			children = (
 				7222A2651E2123F200EE2E0F /* AppDelegate.swift */,
+				6DE979261F711E8400E20817 /* extensions.swift */,
 				722E59F21E27774400A01E85 /* MainViewController.swift */,
 				728B9B321E2CFF0E00F64013 /* TableViewClasses */,
 				728B9B351E2CFF2800F64013 /* SearchBarClasses */,
 				723393321F4EED69000A9E26 /* MapViewClasses */,
+				6D0CF4EA1F7014BC00F97B0B /* MapTableViewClasses */,
 				7222A2691E2123F200EE2E0F /* Main.storyboard */,
 				7222A26C1E2123F200EE2E0F /* Assets.xcassets */,
 				7222A26E1E2123F200EE2E0F /* LaunchScreen.storyboard */,
@@ -112,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				7270FEC31F6BBBB200FC1E78 /* Clustering */,
-				7270FEC41F6BBBB200FC1E78 /* DGSegmentedControl */,
 				723393491F4F0064000A9E26 /* Model */,
 				723393381F4EF148000A9E26 /* MapViewController.swift */,
 				725B4C2C1F66A33600CB12A9 /* CalloutView.swift */,
@@ -143,14 +163,6 @@
 				723F173C1F6BECCF003483FE /* BorderedClusterAnnotationView.swift */,
 			);
 			path = Clustering;
-			sourceTree = "<group>";
-		};
-		7270FEC41F6BBBB200FC1E78 /* DGSegmentedControl */ = {
-			isa = PBXGroup;
-			children = (
-				7270FEC51F6BBBB200FC1E78 /* DGSegmentedControl.swift */,
-			);
-			path = DGSegmentedControl;
 			sourceTree = "<group>";
 		};
 		728B9B321E2CFF0E00F64013 /* TableViewClasses */ = {
@@ -255,6 +267,7 @@
 				7222A26D1E2123F200EE2E0F /* Assets.xcassets in Resources */,
 				7222A26B1E2123F200EE2E0F /* Main.storyboard in Resources */,
 				7226D8161F615DA0004F4956 /* data.json in Resources */,
+				6DD1D8901F7164AB004E2568 /* MenuItemView.xib in Resources */,
 				725B4C2F1F66A39000CB12A9 /* CalloutView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,13 +329,15 @@
 			files = (
 				723F17351F6BC39C003483FE /* QuadTree.swift in Sources */,
 				723F173D1F6BECCF003483FE /* BorderedClusterAnnotationView.swift in Sources */,
+				6DD1D8871F713389004E2568 /* CAPSPageMenu.swift in Sources */,
 				6D2CDE891F6FBF36007AF17C /* TableViewViewModel.swift in Sources */,
+				6DD1D8921F716916004E2568 /* MenuItemView.swift in Sources */,
 				722E59F41E27774400A01E85 /* MainViewController.swift in Sources */,
 				728B9B371E2CFF2800F64013 /* SearchBarViewController.swift in Sources */,
 				724BED921F6A9B670043B3B1 /* NavigationServices.swift in Sources */,
+				6DE979271F711E8400E20817 /* extensions.swift in Sources */,
 				723F173B1F6BD83A003483FE /* Annotation.swift in Sources */,
 				723F17361F6BC39C003483FE /* Cluster.swift in Sources */,
-				7270FEC61F6BBBB200FC1E78 /* DGSegmentedControl.swift in Sources */,
 				7222A2661E2123F200EE2E0F /* AppDelegate.swift in Sources */,
 				728B9B341E2CFF0E00F64013 /* RxTableViewController.swift in Sources */,
 				6D2CDE8C1F6FE657007AF17C /* MapViewViewModel.swift in Sources */,
@@ -330,6 +345,7 @@
 				723393391F4EF148000A9E26 /* MapViewController.swift in Sources */,
 				723F17371F6BC39C003483FE /* Extensions.swift in Sources */,
 				723F17391F6BC86F003483FE /* ClusterAnnotation.swift in Sources */,
+				6D0CF4F21F7014F000F97B0B /* MapTableViewController.swift in Sources */,
 				725B4C2D1F66A33600CB12A9 /* CalloutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

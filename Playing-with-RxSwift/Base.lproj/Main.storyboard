@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="emL-JH-18L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="emL-JH-18L">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,21 +24,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ffF-aa-Zxz">
-                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="EAu-UL-Sjo">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EAu-UL-Sjo" id="pSf-wo-wu6">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="n1Y-kJ-oC3">
-                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="j2q-jN-Trm"/>
@@ -78,7 +78,7 @@
         <!--Table View-->
         <scene sceneID="D89-nL-sAa">
             <objects>
-                <viewController title="Table View" id="mdF-di-Ijh" customClass="RxTableViewController" customModule="Playing_with_RxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RxTableViewController" title="Table View" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mdF-di-Ijh" customClass="RxTableViewController" customModule="Playing_with_RxSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r96-Da-gi7"/>
                         <viewControllerLayoutGuide type="bottom" id="9hS-HQ-15e"/>
@@ -130,7 +130,7 @@
         <!--Map View Controller-->
         <scene sceneID="baK-x1-GVN">
             <objects>
-                <viewController id="kL8-d2-D2F" customClass="MapViewController" customModule="Playing_with_RxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kL8-d2-D2F" customClass="MapViewController" customModule="Playing_with_RxSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7eR-fa-wwR"/>
                         <viewControllerLayoutGuide type="bottom" id="V4I-TG-iI6"/>
@@ -169,15 +169,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wVk-TQ-j81" firstAttribute="top" secondItem="afR-wR-Nmu" secondAttribute="bottom" constant="-50" id="066-Bo-hc4"/>
                             <constraint firstItem="afR-wR-Nmu" firstAttribute="centerX" secondItem="q6b-wh-h3u" secondAttribute="centerX" id="1zs-XZ-F9p"/>
-                            <constraint firstItem="wVk-TQ-j81" firstAttribute="leading" secondItem="afR-wR-Nmu" secondAttribute="trailing" constant="-54" id="7nD-G7-dis"/>
+                            <constraint firstItem="V4I-TG-iI6" firstAttribute="top" secondItem="CK1-7K-CIp" secondAttribute="bottom" constant="20" id="5ee-In-Fae"/>
                             <constraint firstItem="afR-wR-Nmu" firstAttribute="width" secondItem="q6b-wh-h3u" secondAttribute="width" id="DZ8-7W-SAp"/>
+                            <constraint firstItem="V4I-TG-iI6" firstAttribute="top" secondItem="wVk-TQ-j81" secondAttribute="bottom" constant="20" id="GZK-0p-k7v"/>
                             <constraint firstItem="wVk-TQ-j81" firstAttribute="leading" secondItem="nsz-Qg-cyW" secondAttribute="trailing" constant="8" id="Vfm-Cu-SzE"/>
                             <constraint firstItem="afR-wR-Nmu" firstAttribute="height" secondItem="q6b-wh-h3u" secondAttribute="height" id="ar6-UL-aVC"/>
-                            <constraint firstItem="nsz-Qg-cyW" firstAttribute="top" secondItem="afR-wR-Nmu" secondAttribute="bottom" constant="-50" id="gBz-3L-o9A"/>
                             <constraint firstItem="nsz-Qg-cyW" firstAttribute="leading" secondItem="CK1-7K-CIp" secondAttribute="trailing" constant="8" id="hDb-Ww-g8a"/>
-                            <constraint firstItem="CK1-7K-CIp" firstAttribute="top" secondItem="afR-wR-Nmu" secondAttribute="bottom" constant="-50" id="raz-Cx-vpA"/>
+                            <constraint firstItem="V4I-TG-iI6" firstAttribute="top" secondItem="nsz-Qg-cyW" secondAttribute="bottom" constant="20" id="lEn-ac-Mwt"/>
+                            <constraint firstAttribute="trailing" secondItem="wVk-TQ-j81" secondAttribute="trailing" constant="24" id="qsl-aD-8y9"/>
                             <constraint firstItem="afR-wR-Nmu" firstAttribute="centerY" secondItem="q6b-wh-h3u" secondAttribute="centerY" id="rg6-w2-8wo"/>
                         </constraints>
                     </view>
@@ -190,7 +190,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBM-di-hHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1894" y="1061"/>
+            <point key="canvasLocation" x="1893.5999999999999" y="1060.1199400299852"/>
+        </scene>
+        <!--Map Table View Controller-->
+        <scene sceneID="XVc-iL-aZS">
+            <objects>
+                <viewController id="xoI-hh-iIo" customClass="MapTableViewController" customModule="Playing_with_RxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nv5-qS-OXD"/>
+                        <viewControllerLayoutGuide type="bottom" id="I0j-NV-8jy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cun-BY-smG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fd9-Xw-Mfp">
+                                <rect key="frame" x="0.0" y="64" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fd9-Xw-Mfp" secondAttribute="trailing" id="FvK-WK-qrh"/>
+                            <constraint firstItem="fd9-Xw-Mfp" firstAttribute="leading" secondItem="Cun-BY-smG" secondAttribute="leading" id="HzQ-WZ-rl7"/>
+                            <constraint firstItem="I0j-NV-8jy" firstAttribute="top" secondItem="fd9-Xw-Mfp" secondAttribute="bottom" constant="-64" id="gUl-MB-mkx"/>
+                            <constraint firstItem="fd9-Xw-Mfp" firstAttribute="top" secondItem="Nv5-qS-OXD" secondAttribute="bottom" id="sBX-9I-hbe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="fd9-Xw-Mfp" id="rYf-Bf-HK4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2KP-D6-YgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1885.5999999999999" y="1714.9925037481262"/>
         </scene>
         <!--Playing with RxSwift-->
         <scene sceneID="kCe-CH-wjy">
@@ -208,7 +241,7 @@
                                 <rect key="frame" x="137" y="258" width="101" height="30"/>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.53725490200000003" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="101" id="OER-AB-PGQ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101" id="OER-AB-PGQ"/>
                                 </constraints>
                                 <state key="normal" title="SearchBar">
                                     <color key="titleColor" red="0.91780990360000003" green="0.91850668189999995" blue="0.91791784759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -221,7 +254,7 @@
                                 <rect key="frame" x="137" y="318" width="101" height="30"/>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.53725490200000003" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="101" id="dJv-rI-UCc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101" id="dJv-rI-UCc"/>
                                 </constraints>
                                 <state key="normal" title="TableView">
                                     <color key="titleColor" red="0.91780990360000003" green="0.91850668189999995" blue="0.91791784759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -234,7 +267,7 @@
                                 <rect key="frame" x="137" y="378" width="101" height="30"/>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.53725490200000003" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="101" id="w5J-at-RTE"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101" id="w5J-at-RTE"/>
                                 </constraints>
                                 <state key="normal" title="MapView">
                                     <color key="titleColor" red="0.91780990360000003" green="0.91850668189999995" blue="0.91791784759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -243,15 +276,30 @@
                                     <segue destination="kL8-d2-D2F" kind="show" id="vXU-EO-xQS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17x-y6-VIH">
+                                <rect key="frame" x="137" y="438" width="101" height="30"/>
+                                <color key="backgroundColor" red="0.22352941179999999" green="0.53725490200000003" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101" id="T50-fN-k8A"/>
+                                </constraints>
+                                <state key="normal" title="MapTableView">
+                                    <color key="titleColor" red="0.91780990360000003" green="0.91850668189999995" blue="0.91791784759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xoI-hh-iIo" kind="show" id="STQ-Ii-7xv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="17x-y6-VIH" firstAttribute="top" secondItem="eoh-Xt-fRz" secondAttribute="bottom" constant="30" id="683-oC-rF6"/>
                             <constraint firstItem="eoh-Xt-fRz" firstAttribute="top" secondItem="CA7-wN-518" secondAttribute="bottom" constant="30" id="DHV-VR-XLJ"/>
                             <constraint firstItem="AUl-kA-IOz" firstAttribute="centerX" secondItem="f1V-sd-PKj" secondAttribute="centerX" id="QzY-X0-w7d"/>
                             <constraint firstItem="CA7-wN-518" firstAttribute="centerX" secondItem="f1V-sd-PKj" secondAttribute="centerX" id="Rra-yJ-KOo"/>
                             <constraint firstItem="eoh-Xt-fRz" firstAttribute="centerX" secondItem="f1V-sd-PKj" secondAttribute="centerX" id="iue-4f-jNu"/>
                             <constraint firstItem="CA7-wN-518" firstAttribute="top" secondItem="AUl-kA-IOz" secondAttribute="bottom" constant="30" id="jVP-PB-DXe"/>
                             <constraint firstItem="CA7-wN-518" firstAttribute="centerY" secondItem="f1V-sd-PKj" secondAttribute="centerY" id="nKF-0H-HgB"/>
+                            <constraint firstItem="17x-y6-VIH" firstAttribute="centerX" secondItem="f1V-sd-PKj" secondAttribute="centerX" id="sEL-cu-IjT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playing with RxSwift" id="0H0-D7-b9v"/>
@@ -266,7 +314,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="emL-JH-18L" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bu1-oZ-WNC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

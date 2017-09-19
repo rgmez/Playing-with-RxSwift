@@ -25,6 +25,8 @@ class MapViewController: UIViewController, CalloutViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Map"
+        
         configureClusterManager()
         addAnnotations()
         
